@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Dev') {
+            steps {
+                echo 'Dev Envirornment'
+            }
+        }
+        stage('QA') {
+            steps {
+                echo 'QA Envirornment'
+            }
+        }
+        stage('UAT') {
+            steps {
+                echo 'UAT Envirornment'
+            }
+        }
+        stage('PreProd') {
+            steps {
+                echo 'PreProd Envirornment'
+            }
+        }
+    }
+}
